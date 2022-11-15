@@ -15,7 +15,7 @@ const Index = () => {
     <div className='h-screen bg-sidebar-gray p-3'>
       <div className='flex justify-between items-center flex-col md:flex-row'>
         <div>
-            <p className='bg-primary p-2 px-8 rounded-md text-white'>MAKE A TRANSFER</p>
+            <p className='bg-primary p-2 px-8 rounded-md text-white font-medium'>MAKE A TRANSFER</p>
         </div>
         <div className='flex items-center text-right'>
             <div>
@@ -33,11 +33,11 @@ const Index = () => {
                     <div className='w-1/4'><img src={left} alt='left arrow'></img></div>
                     <div className='card-background w-2/4 text-white rounded-md p-3'>
                         <div>
-                            <p>Savings Account</p>
+                            <p className='font-medium'>Savings Account</p>
                             <p>0061789943</p>
                         </div>
-                        <div className='text-right'>
-                            <p>Available balance</p>
+                        <div className='text-left md:text-right pt-2 md:pt-0'>
+                            <p className='font-medium'>Available balance</p>
                             <p>&#8358; 400,000.56</p>
                             <p>Book balance: &#8358; 400,000.56</p>
                         </div>
