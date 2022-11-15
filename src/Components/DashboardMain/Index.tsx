@@ -7,6 +7,7 @@ import TransactHistory from '../../Components/TransactHistory/Index'
 import down from '../../assets/Icon/arrow-down.svg'
 import up from '../../assets/Icon/arrow-up.svg'
 import Beneficiaries from '../../Components/Beneficiaries/Index'
+import home from '../../assets/Icon/dashboard-home.svg'
 import './DashboardMain.scss'
 
 const Index = () => {
@@ -49,11 +50,12 @@ const Index = () => {
                     <h3 className=' text-lg text-primary font-bold mb-3'>Transaction history</h3>
                     <p className='text-orange underline text-sm'>Download statement</p>
                 </div>
-                <div>
+                <div className='flex flex-col gap-1'>
                     <TransactHistory src={down} />
                     <TransactHistory src={up} />
                     <TransactHistory src={down} />
                     <TransactHistory src={down} />
+                    <TransactHistory src={up} />
                 </div>
                 <div>
 
@@ -61,11 +63,11 @@ const Index = () => {
             </div>
         </div>
         <div className='md:w-2/6'>
-            <div className='bg-white rounded-md p-5'>
-                <h3 className=' text-lg text-primary font-bold mb-3'>Frequent beneficiaries</h3>
+            <div className='bg-white rounded-md py-5 px-3 mb-3'>
+                <h3 className=' text-lg text-primary font-bold mb-1'>Frequent beneficiaries</h3>
                 <div>
-                    <p>Click on a beneficiary to make a quick transfer</p>
-                    <div>
+                    <p className='mb-1'>Click on a beneficiary to make a quick transfer</p>
+                    <div className='flex flex-col gap-1'>
                         <Beneficiaries />
                         <Beneficiaries />
                         <Beneficiaries />
@@ -73,8 +75,23 @@ const Index = () => {
                     <p className='text-orange underline text-sm text-right pt-1'>See all beneficiaries</p>
                 </div>
             </div>
-            <div className='bg-white rounded-md'>
-                <h3 className=' text-lg text-primary font-bold mb-3'></h3>
+            <div className='bg-white rounded-md px-3 py-5'>
+                <h3 className=' text-lg text-primary font-bold'>Create a target savings</h3>
+                <div className='bg-sidebar-gray mt-1 mx-5 rounded-md py-3 px-5'>
+                    <div className='flex gap-3'>
+                        <div>
+                            <img src={home} alt='accommodation'></img>
+                        </div>
+                        <div>
+                            <p className='text-sm'>Rent/accommodation </p>
+                            <div className='flex justify-between text-xs'>
+                                <p className='text-primary'>12% p.a</p>
+                                <p className='text-placeholder'>6 months</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p className='text-orange underline text-sm text-center pt-1'>Create now</p>
+                </div>
             </div>
         </div>
       </div>

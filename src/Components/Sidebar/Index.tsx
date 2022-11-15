@@ -50,7 +50,7 @@ const Index = () => {
         }
     ]
   return (
-    <div className='p-5 flex flex-col justify-between h-full md:h-screen'>
+    <div className='p-5 flex flex-col justify-between items-center md:items-left h-full md:h-screen'>
         <div>
             <div className='mb-14'><Link to='/'><img src={Logo} alt='trustbanc logo'></img></Link></div>
             <div className='flex flex-col gap-3'>

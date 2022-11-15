@@ -4,13 +4,13 @@ import './beneficiaries.scss'
 
 const Index = () => {
   return (
-    <div className='flex gap-3 benefit p-3 rounded-md'>
-        <div>
-            <img src={benefit} alt='beneficiary'></img>
+    <div className='flex gap-3 benefit py-2 px-5 rounded-md'>
+        <div className='w-1/6'>
+            <img src={benefit} alt='beneficiary' className='w-full'></img>
         </div>
         <div>
-            <p>Aminat Oladunni</p>
-            <p className='text-sm text-placeholder'>Access Bank - 0021349812</p>
+            <p className='text-sm font-medium'>Aminat Oladunni</p>
+            <p className='text-xs text-placeholder'>Access Bank - 0021349812</p>
         </div>
     </div>
   )
