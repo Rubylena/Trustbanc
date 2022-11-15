@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Index = () => {
   return (
@@ -11,8 +12,8 @@ const Index = () => {
                 <input type='password' placeholder='Password'
                 className=' border-2 border-border rounded-md py-2 px-5 w-full'>
                 </input>
-                <button type='submit'
-                className='bg-secondary text-white p-2 rounded-md font-medium'>LOGIN</button>
+                <Link to='/dashboard'><button type='submit'
+                className='bg-secondary text-white p-2 rounded-md font-medium w-full'>LOGIN</button></Link>
                 <span className='text-green text-right text-sm font-medium'>Forgot password?</span>
             </form>
     </div>

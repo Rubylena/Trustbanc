@@ -11,8 +11,8 @@ import './DashboardMain.scss'
 
 const Index = () => {
   return (
-    <div className='h-screen bg-sidebar-gray p-5'>
-      <div className='flex justify-between items-center'>
+    <div className='h-screen bg-sidebar-gray p-3'>
+      <div className='flex justify-between items-center flex-col md:flex-row'>
         <div>
             <p className='bg-primary p-2 px-8 rounded-md text-white'>MAKE A TRANSFER</p>
         </div>
@@ -24,9 +24,9 @@ const Index = () => {
             <div><img src={User} alt='profile'></img></div>
         </div>
       </div>
-      <div className='flex gap-5'>
-        <div className='w-4/6'>
-            <div className='bg-white rounded-md p-5 mb-5'>
+      <div className='flex gap-3 flex-col md:flex-row'>
+        <div className='md:w-4/6'>
+            <div className='bg-white rounded-md py-3 px-5 mb-3'>
                 <h3 className=' text-lg text-primary font-bold mb-3'>My Account(s)</h3>
                 <div className='flex justify-between items-center'>
                     <div className='w-1/4'><img src={left} alt='left arrow'></img></div>
@@ -44,8 +44,8 @@ const Index = () => {
                     <div className='w-1/4 flex justify-end'><img src={right} alt='right arrow'></img></div>
                 </div>
             </div>
-            <div className='bg-white rounded-md  p-5'>
-                <div className='flex justify-between mb-5'>
+            <div className='bg-white rounded-md  py-5 px-5'>
+                <div className='flex justify-between mb-3'>
                     <h3 className=' text-lg text-primary font-bold mb-3'>Transaction history</h3>
                     <p className='text-orange underline text-sm'>Download statement</p>
                 </div>
@@ -60,7 +60,7 @@ const Index = () => {
                 </div>
             </div>
         </div>
-        <div className='w-2/6'>
+        <div className='md:w-2/6'>
             <div className='bg-white rounded-md p-5'>
                 <h3 className=' text-lg text-primary font-bold mb-3'>Frequent beneficiaries</h3>
                 <div>

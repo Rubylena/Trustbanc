@@ -9,6 +9,7 @@ import Loans from '../../assets/Icon/loans.svg'
 import Settings from '../../assets/Icon/settings.svg'
 import Logout from '../../assets/Icon/logout.svg'
 import SidebarOptions from './SidebarOptions'
+import { Link } from 'react-router-dom'
 
 const Index = () => {
     const data =[
@@ -49,9 +50,9 @@ const Index = () => {
         }
     ]
   return (
-    <div className='p-5 flex flex-col justify-between h-screen'>
+    <div className='p-5 flex flex-col justify-between h-full md:h-screen'>
         <div>
-            <div className='mb-14'><img src={Logo} alt='trustbanc logo'></img></div>
+            <div className='mb-14'><Link to='/'><img src={Logo} alt='trustbanc logo'></img></Link></div>
             <div className='flex flex-col gap-3'>
                 {data.map((options, index) => (
                     <div key={index}>
@@ -60,11 +61,11 @@ const Index = () => {
                 ))}
             </div>
         </div>
-        <div className='flex gap-6'>
+        <div className='flex gap-6 mt-5'>
             <div className='text-red'>
                 <img src={Logout} alt='logout'></img>
             </div>
-            <p>Logout</p>
+            <p className='text-red'>Logout</p>
         </div>
     </div>
   )
