@@ -1,0 +1,53 @@
+@import '../../Styles/Colors.scss';
+@import '../../Styles/MediaQueries.scss';
+.Landing{
+    position: relative;
+    height: 100vh;
+    &-background,
+    &-overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    &-background{
+        background: url(../../assets/Img/landing_background.svg) center/cover no-repeat;
+        z-index: 1;
+    }
+    &-overlay{
+        background: $overlay;
+        z-index: 2;
+    }
+    &-dialogue{
+        position: relative;
+        z-index: 3;
+        border-radius: 5px;
+        &__left{
+            max-width: 258px;
+            background: $primary;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &__right{
+            max-width: 600px;
+            background: $white;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        @include screen-size(tablet-only){
+            &__left{
+                max-width: 600px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 0px;
+            }
+            &__right{
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+        }
+    }
+}
